@@ -5,46 +5,39 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ARS FACT GAMER</title>
-
 <style>
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   background: #080808;
   color: white;
   font-family: Arial, sans-serif;
 }
-
 header {
   background: linear-gradient(135deg,#17120a,#080808);
   padding: 25px 15px;
   text-align: center;
   border-bottom: 2px solid #d6a928;
 }
-
 .logo {
   color: #ffd700;
   font-size: 27px;
   font-weight: 900;
   letter-spacing: 2px;
 }
-
 header p {
   color: #c9b77a;
   margin-top: 8px;
   font-size: 13px;
 }
-
 .container {
   width: 92%;
   max-width: 850px;
   margin: 25px auto;
 }
-
 .section {
   background: #151515;
   border: 1px solid #705719;
@@ -53,20 +46,17 @@ header p {
   margin-bottom: 22px;
   box-shadow: 0 0 15px #d6a92818;
 }
-
 .heading {
   color: #ffd700;
   font-size: 20px;
   margin-bottom: 15px;
 }
-
 .video-box video {
   width: 100%;
   border-radius: 10px;
   background: black;
   display: block;
 }
-
 .download {
   display: block;
   width: 100%;
@@ -80,11 +70,9 @@ header p {
   border-radius: 9px;
   font-size: 16px;
 }
-
 .download:hover {
   filter: brightness(1.15);
 }
-
 .viewer {
   display: flex;
   justify-content: space-between;
@@ -92,19 +80,16 @@ header p {
   gap: 10px;
   flex-wrap: wrap;
 }
-
 .viewer-number {
   color: #ffd700;
   font-size: 28px;
   font-weight: bold;
 }
-
 .demo-label {
   color: #aaa;
   font-size: 11px;
   margin-top: 5px;
 }
-
 .chat-box {
   height: 260px;
   overflow-y: auto;
@@ -113,7 +98,6 @@ header p {
   border-radius: 10px;
   padding: 12px;
 }
-
 .message {
   background: #1c1c1c;
   border-left: 3px solid #d6a928;
@@ -122,19 +106,16 @@ header p {
   margin-bottom: 9px;
   font-size: 14px;
 }
-
 .username {
   color: #ffd700;
   font-weight: bold;
   margin-bottom: 5px;
 }
-
 .chat-note {
   color: #999;
   font-size: 12px;
   margin-top: 10px;
 }
-
 footer {
   text-align: center;
   padding: 25px 10px;
@@ -142,56 +123,45 @@ footer {
   color: #b9a66c;
   font-size: 13px;
 }
-
 .gold {
   color: #ffd700;
 }
-
 @media(max-width:500px) {
   .logo {
     font-size: 23px;
   }
-
   .section {
     padding: 14px;
   }
-
   .viewer-number {
     font-size: 24px;
   }
 }
 </style>
 </head>
-
 <body>
-
 <header>
   <div class="logo">👑 ARS FACT GAMER</div>
   <p>FREE FIRE GAMING • VIDEOS • ENTERTAINMENT</p>
 </header>
-
 <main class="container">
-
   <section class="section">
     <h2 class="heading">🔥 Featured Gaming Video</h2>
-
     <div class="video-box">
       <video controls playsinline preload="metadata">
         <source src="ARS_Video.mp4" type="video/mp4">
         Your browser does not support video playback.
       </video>
     </div>
-
     <a class="download"
-       href="ARS_Video.mp4"
-       download="ARS_Video.mp4">
-       ⬇ DOWNLOAD VIDEO
+       href="https://whatsapp.com/channel/0029Vb5p1agI7Be5xMceCr1B"
+       target="_blank"
+       rel="noopener noreferrer">
+       📢 OPEN WHATSAPP CHANNEL
     </a>
   </section>
-
   <section class="section">
     <h2 class="heading">👀 Viewer Activity</h2>
-
     <div class="viewer">
       <div>
         <div class="viewer-number">
@@ -201,68 +171,49 @@ footer {
           DEMO VIEWERS • SIMULATED
         </div>
       </div>
-
       <div class="gold">● Demo Counter</div>
     </div>
   </section>
-
   <section class="section">
     <h2 class="heading">💬 Live Chat Demo</h2>
-
     <div class="chat-box" id="chat">
-
       <div class="message">
         <div class="username">ARS Fan</div>
         Welcome!
       </div>
-
       <div class="message">
         <div class="username">Gaming Lover</div>
         Very nice video!
       </div>
-
       <div class="message">
         <div class="username">Free Fire Player</div>
         Thank you ❤️
       </div>
-
       <div class="message">
         <div class="username">ARS Viewer</div>
         Great gameplay!
       </div>
-
     </div>
-
     <p class="chat-note">
       Sample messages for demonstration. Not real user chat.
     </p>
   </section>
-
 </main>
-
 <footer>
   <p>👑 <span class="gold">ARS FACT GAMER</span></p>
   <p>Made for Gaming Lovers ❤️</p>
   <p>© 2026 ARS Fact Gamer</p>
 </footer>
-
 <script>
-
 // DEMO VIEWER COUNTER
 let viewers = 1000;
-
 setInterval(() => {
   let change = Math.floor(Math.random() * 13) - 6;
   viewers += change;
-
   viewers = Math.max(900, Math.min(1200, viewers));
-
   document.getElementById("viewers").textContent =
     viewers.toLocaleString("en-IN");
-
 }, 3000);
-
-
 // DEMO CHAT MESSAGES
 const messages = [
   ["ARS Fan", "Welcome! ❤️"],
@@ -273,49 +224,35 @@ const messages = [
   ["Free Fire Fan", "Love this video!"],
   ["ARS Supporter", "Keep it up!"]
 ];
-
 function addDemoMessage() {
   const chat = document.getElementById("chat");
-
   const item = messages[
     Math.floor(Math.random() * messages.length)
   ];
-
   const message = document.createElement("div");
   message.className = "message";
-
   const username = document.createElement("div");
   username.className = "username";
   username.textContent = item[0];
-
   const content = document.createElement("div");
   content.textContent = item[1];
-
   message.appendChild(username);
   message.appendChild(content);
-
   chat.appendChild(message);
-
   // Keep chat size limited
   while (chat.children.length > 12) {
     chat.removeChild(chat.firstElementChild);
   }
-
   chat.scrollTop = chat.scrollHeight;
 }
-
 function scheduleMessage() {
   const delay = 7000 + Math.random() * 7000;
-
   setTimeout(() => {
     addDemoMessage();
     scheduleMessage();
   }, delay);
 }
-
 scheduleMessage();
-
 </script>
-
 </body>
 </html>
